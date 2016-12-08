@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lenovo.main.MainMenuActivity"
+    
+    android:background="@drawable/a2"
+     >
+
+    <GridView
+        android:id="@+id/gridView1_mainmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" 
+        android:layout_centerHorizontal="true"
+        >
+    </GridView>
+
+</RelativeLayout>

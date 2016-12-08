@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context="com.lenovo.main.SignActivity" >
+
+    <EditText
+        android:id="@+id/editText1_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:ems="10" 
+        android:hint="请输入手机号">
+        
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1_sign"
+        android:layout_below="@+id/editText1_sign"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="55dp"
+        android:text="获取手机验证码" />
+
+</RelativeLayout>

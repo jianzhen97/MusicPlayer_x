@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shark"
+    tools:context="com.lenovo.main.MusicListActivity" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="87dp" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/play"
+        android:src="@drawable/landscape_prev_icon_normal" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/next"
+        android:src="@drawable/musicplayer_item_play_pressed" />
+
+    <ImageView
+        android:id="@+id/nowplay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon_album_plus" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/landscape_next_icon_normal" />
+
+    <TextView
+        android:id="@+id/nowsong"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nowplay"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/nowplay"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nowsinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/nowplay"
+        android:text="" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_toRightOf="@+id/play"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/textView1_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekBar1"
+        android:layout_alignParentLeft="true"
+        android:paddingBottom="6dp"
+        android:text="" />
+
+</RelativeLayout>
